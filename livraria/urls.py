@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('teste/', views.teste),
     path('pag/', views.teste2),
-    path('categorias/', views.CategoriaView.as_view())
+    path('categorias/', views.CategoriaView.as_view()),
+    path('categorioas/<int:id>/', views.CategoriaView.as_view())
 ]
 
